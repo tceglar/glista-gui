@@ -17,7 +17,11 @@ jobs:
           node-version: 12.x
       - run: npm ci
       - run: npm run build
-      - run: npm run deploy
+      - name: Set Creds
+        run: git config user.name "tceglar" && git config user.email "tilen.ceglar@gmail.com"
+      - name: Deploy
+        run: npm run deploy
+
       # - run: npm run format-check
       # - run: npm test
       # - name: Verify no unstaged changes
