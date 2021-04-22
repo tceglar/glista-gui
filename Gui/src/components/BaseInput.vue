@@ -1,15 +1,12 @@
 <template>
-  <div
-    class="form-group"
-    :class="[
+  <div class="form-group" :class="[
       { 'input-group': hasIcon },
       { 'has-danger': error },
       { focused: focused },
       { 'has-label': label || $slots.label },
       { 'has-success': valid === true },
       { 'has-danger': valid === false },
-    ]"
-  >
+    ]">
     <slot name="label">
       <label v-if="label" class="form-control-label" :class="labelClasses">
         {{ label }}
@@ -25,18 +22,11 @@
       </span>
     </div>
     <slot v-bind="slotData">
-      <input
-        :value="value"
-        v-on="listeners"
-        v-bind="$attrs"
-        class="form-control"
-        :class="[
+      <input :value="value" v-on="listeners" v-bind="$attrs" class="form-control" :class="[
           { 'is-valid': valid === true },
           { 'is-invalid': valid === false },
           inputClasses,
-        ]"
-        aria-describedby="addon-right addon-left"
-      />
+        ]" aria-describedby="addon-right addon-left" />
     </slot>
     <div v-if="addonRightIcon || $slots.addonRight" class="input-group-append">
       <span class="input-group-text">
@@ -47,12 +37,7 @@
     </div>
     <slot name="infoBlock"></slot>
     <slot name="helpBlock">
-      <div
-        class="text-danger invalid-feedback"
-        style="display: block"
-        :class="{ 'mt-2': hasIcon }"
-        v-if="error"
-      >
+      <div class="text-danger invalid-feedback" style="display: block" :class="{ 'mt-2': hasIcon }" v-if="error">
         {{ error }}
       </div>
     </slot>

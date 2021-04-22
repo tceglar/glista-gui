@@ -1,11 +1,7 @@
 <template>
   <div class="main-content bg-default">
     <!-- Navbar -->
-    <base-nav
-      class="navbar-top navbar-horizontal navbar-dark"
-      containerClasses="px-4 container"
-      expand
-    >
+    <base-nav class="navbar-top navbar-horizontal navbar-dark" containerClasses="px-4 container" expand>
       <router-link slot="brand" class="navbar-brand" to="/">
         <img src="img/brand/white.png" />
       </router-link>
@@ -20,12 +16,7 @@
               </router-link>
             </div>
             <div class="col-6 collapse-close">
-              <button
-                type="button"
-                @click="closeMenu"
-                class="navbar-toggler"
-                aria-label="Toggle sidenav"
-              >
+              <button type="button" @click="closeMenu" class="navbar-toggler" aria-label="Toggle sidenav">
                 <span></span>
                 <span></span>
               </button>
@@ -77,18 +68,8 @@
         </div>
       </div>
       <div class="separator separator-bottom separator-skew zindex-100">
-        <svg
-          x="0"
-          y="0"
-          viewBox="0 0 2560 100"
-          preserveAspectRatio="none"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <polygon
-            class="fill-default"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
         </svg>
       </div>
     </div>
@@ -104,49 +85,22 @@
           <div class="col-xl-6">
             <div class="copyright text-center text-xl-left text-muted">
               &copy; {{ year }}
-              <a
-                href="https://www.creative-tim.com"
-                class="font-weight-bold ml-1"
-                target="_blank"
-                >Creative Tim</a
-              >
+              <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a>
             </div>
           </div>
           <div class="col-xl-6">
-            <ul
-              class="nav nav-footer justify-content-center justify-content-xl-end"
-            >
+            <ul class="nav nav-footer justify-content-center justify-content-xl-end">
               <li class="nav-item">
-                <a
-                  href="https://www.creative-tim.com"
-                  class="nav-link"
-                  target="_blank"
-                  >Creative Tim</a
-                >
+                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
               </li>
               <li class="nav-item">
-                <a
-                  href="https://www.creative-tim.com/presentation"
-                  class="nav-link"
-                  target="_blank"
-                  >About Us</a
-                >
+                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
               </li>
               <li class="nav-item">
-                <a
-                  href="https://www.creative-tim.com/blog"
-                  class="nav-link"
-                  target="_blank"
-                  >Blog</a
-                >
+                <a href="https://www.creative-tim.com/blog" class="nav-link" target="_blank">Blog</a>
               </li>
               <li class="nav-item">
-                <a
-                  href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md"
-                  class="nav-link"
-                  target="_blank"
-                  >MIT License</a
-                >
+                <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
               </li>
             </ul>
           </div>

@@ -1,11 +1,6 @@
 <template>
   <div class="input-slider-container">
-    <div
-      class="input-slider"
-      ref="slider"
-      :class="[`slider-${type}`]"
-      :disabled="disabled"
-    ></div>
+    <div class="input-slider" ref="slider" :class="[`slider-${type}`]" :disabled="disabled"></div>
   </div>
 </template>
 <script>

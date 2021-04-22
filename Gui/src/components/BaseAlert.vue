@@ -1,11 +1,6 @@
 <template>
   <fade-transition>
-    <div
-      class="alert"
-      :class="[`alert-${type}`, { 'alert-dismissible': dismissible }]"
-      role="alert"
-      v-if="visible"
-    >
+    <div class="alert" :class="[`alert-${type}`, { 'alert-dismissible': dismissible }]" role="alert" v-if="visible">
       <slot v-if="!dismissible">
         <span v-if="icon" class="alert-inner--icon">
           <i :class="icon"></i>
@@ -24,13 +19,7 @@
           </span>
         </slot>
         <slot name="dismiss-icon">
-          <button
-            type="button"
-            data-dismiss="alert"
-            aria-label="Close"
-            class="close"
-            @click="dismissAlert"
-          >
+          <button type="button" data-dismiss="alert" aria-label="Close" class="close" @click="dismissAlert">
             <span aria-hidden="true">×</span>
           </button>
         </slot>
