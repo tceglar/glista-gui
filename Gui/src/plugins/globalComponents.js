@@ -39,5 +39,5 @@ export default {
     Vue.component(Modal.name, Modal);
     Vue.component(TabPane.name, TabPane);
     Vue.component(Tabs.name, Tabs);
-  }
+  },
 };

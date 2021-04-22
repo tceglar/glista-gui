@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json,vue}\""
   },
   "dependencies": {
     "bootstrap": "4.5.0",
@@ -15,6 +16,7 @@
     "core-js": "3.6.5",
     "flatpickr": "4.6.3",
     "nouislider": "14.6.0",
+    "prettier": "^2.2.1",
     "register-service-worker": "1.7.1",
     "vue": "2.6.11",
     "vue-chartjs": "3.5.0",
